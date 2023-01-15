@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		716DD3C124B5F2EB009DA63C /* RavenTraceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3C024B5F2EB009DA63C /* RavenTraceTests.swift */; };
+		716DD3CC24B5F2EB009DA63C /* RavenTraceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3CB24B5F2EB009DA63C /* RavenTraceUITests.swift */; };
+		716DD3DB24B5FD81009DA63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716DD3D924B5FD81009DA63C /* LaunchScreen.storyboard */; };
+		716DD3DC24B5FD81009DA63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716DD3DA24B5FD81009DA63C /* Main.storyboard */; };
+		716DD3EF24B5FE9B009DA63C /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3E024B5FE9B009DA63C /* CLLocation.swift */; };
+		716DD3F024B5FE9B009DA63C /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3E124B5FE9B009DA63C /* CLLocationCoordinate2D.swift */; };
+		716DD3F124B5FE9B009DA63C /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3E224B5FE9B009DA63C /* FloatingPoint.swift */; };
+		716DD3F224B5FE9B009DA63C /* CLCircularRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3E324B5FE9B009DA63C /* CLCircularRegion.swift */; };
+		716DD3F324B5FE9B009DA63C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3E424B5FE9B009DA63C /* String.swift */; };
+		716DD3F424B5FE9B009DA63C /* MKPlacemark+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3E524B5FE9B009DA63C /* MKPlacemark+Extension.swift */; };
+		716DD3F824B5FE9B009DA63C /* CLGeocoder+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3EB24B5FE9B009DA63C /* CLGeocoder+Rx.swift */; };
+		716DD3F924B5FE9B009DA63C /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3EC24B5FE9B009DA63C /* CLLocationManager+Rx.swift */; };
+		716DD3FA24B5FE9B009DA63C /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3ED24B5FE9B009DA63C /* RxCLLocationManagerDelegateProxy.swift */; };
+		716DD3FB24B5FE9B009DA63C /* ARSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3EE24B5FE9B009DA63C /* ARSession.swift */; };
+		716DD3FD24B5FEBC009DA63C /* overlay.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 716DD3FC24B5FEBB009DA63C /* overlay.atlas */; };
+		716DD40124B5FEEB009DA63C /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3FF24B5FEEB009DA63C /* CompassView.swift */; };
+		716DD40B24B5FF29009DA63C /* DrawerSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD40624B5FF29009DA63C /* DrawerSheetViewController.swift */; };
+		716DD40C24B5FF29009DA63C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD40724B5FF29009DA63C /* MapViewController.swift */; };
+		716DD40D24B5FF29009DA63C /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD40824B5FF29009DA63C /* ResultsTableController.swift */; };
+		716DD40E24B5FF29009DA63C /* PlaceSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD40924B5FF29009DA63C /* PlaceSelectionViewController.swift */; };
+		716DD40F24B5FF29009DA63C /* PlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD40A24B5FF29009DA63C /* PlaceListViewController.swift */; };
+		716DD41924B5FFDD009DA63C /* TargetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD41824B5FFDD009DA63C /* TargetingViewController.swift */; };
+		716DD41B24B5FFEA009DA63C /* TargetingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD41A24B5FFEA009DA63C /* TargetingScene.swift */; };
+		716DD42224B5FFFC009DA63C /* SearchMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD41D24B5FFFC009DA63C /* SearchMapVC.swift */; };
+		716DD42324B5FFFC009DA63C /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716DD41E24B5FFFC009DA63C /* Search.storyboard */; };
+		716DD42424B5FFFC009DA63C /* SearchResultTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD41F24B5FFFC009DA63C /* SearchResultTableVC.swift */; };
+		716DD42524B5FFFC009DA63C /* SearchTargetAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD42024B5FFFC009DA63C /* SearchTargetAnnotation.swift */; };
+		716DD42624B5FFFC009DA63C /* SearchSuggestionsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD42124B5FFFC009DA63C /* SearchSuggestionsTableVC.swift */; };
+		716DD42A24B602B8009DA63C /* TargetARAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD42924B602B7009DA63C /* TargetARAnchor.swift */; };
+		716DD42C24B602DE009DA63C /* TargetSCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD42B24B602DE009DA63C /* TargetSCNNode.swift */; };
+		716DD43024B6037F009DA63C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 716DD42E24B6037F009DA63C /* Localizable.strings */; };
+		718A51FD2974A97300359D37 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 718A51FC2974A97300359D37 /* Readme.md */; };
+		71DAAD7E24B60CD90045ADCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DAAD7D24B60CD90045ADCE /* Assets.xcassets */; };
+		71DAAD8024B60D490045ADCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DAAD7F24B60D490045ADCE /* AppDelegate.swift */; };
+		71DAAD8324B741A30045ADCE /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71DAAD8124B741A30045ADCE /* CoreData.xcdatamodeld */; };
+		71DAAD9724B7503E0045ADCE /* Target+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DAAD9524B7503E0045ADCE /* Target+CoreDataClass.swift */; };
+		71DAAD9824B7503E0045ADCE /* Target+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DAAD9624B7503E0045ADCE /* Target+CoreDataProperties.swift */; };
+		71DAADDB24B931560045ADCE /* TargetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DAADDA24B931560045ADCE /* TargetListViewController.swift */; };
+		71DAADDF24B9F3030045ADCE /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DAADDE24B9F3030045ADCE /* UITableViewCell+Extensions.swift */; };
+		809BE22505119EE75C7D13CD /* Pods_RavenTrace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C92E8D9345888F4E096378 /* Pods_RavenTrace.framework */; };
+		BCA786F3C3A3670A209D02D6 /* Pods_RavenTrace_RavenTraceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363BDDD07319B592A6219AEF /* Pods_RavenTrace_RavenTraceUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		716DD3BD24B5F2EB009DA63C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 716DD39E24B5F2EA009DA63C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 716DD3A524B5F2EA009DA63C;
+			remoteInfo = RavenTrace;
+		};
+		716DD3C824B5F2EB009DA63C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 716DD39E24B5F2EA009DA63C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 716DD3A524B5F2EA009DA63C;
+			remoteInfo = RavenTrace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19FACF466944D480485E39BB /* Pods-RavenTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavenTrace.debug.xcconfig"; path = "Target Support Files/Pods-RavenTrace/Pods-RavenTrace.debug.xcconfig"; sourceTree = "<group>"; };
+		243F46380E0585ED18A61E69 /* Pods-RavenTrace-RavenTraceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavenTrace-RavenTraceUITests.debug.xcconfig"; path = "Target Support Files/Pods-RavenTrace-RavenTraceUITests/Pods-RavenTrace-RavenTraceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		363BDDD07319B592A6219AEF /* Pods_RavenTrace_RavenTraceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RavenTrace_RavenTraceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		716DD3A624B5F2EA009DA63C /* RavenTrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RavenTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		716DD3B724B5F2EB009DA63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716DD3BC24B5F2EB009DA63C /* RavenTraceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenTraceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		716DD3C024B5F2EB009DA63C /* RavenTraceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavenTraceTests.swift; sourceTree = "<group>"; };
+		716DD3C224B5F2EB009DA63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716DD3C724B5F2EB009DA63C /* RavenTraceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenTraceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		716DD3CB24B5F2EB009DA63C /* RavenTraceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavenTraceUITests.swift; sourceTree = "<group>"; };
+		716DD3CD24B5F2EC009DA63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716DD3D924B5FD81009DA63C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		716DD3DA24B5FD81009DA63C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		716DD3E024B5FE9B009DA63C /* CLLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
+		716DD3E124B5FE9B009DA63C /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		716DD3E224B5FE9B009DA63C /* FloatingPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPoint.swift; sourceTree = "<group>"; };
+		716DD3E324B5FE9B009DA63C /* CLCircularRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCircularRegion.swift; sourceTree = "<group>"; };
+		716DD3E424B5FE9B009DA63C /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		716DD3E524B5FE9B009DA63C /* MKPlacemark+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPlacemark+Extension.swift"; sourceTree = "<group>"; };
+		716DD3EB24B5FE9B009DA63C /* CLGeocoder+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLGeocoder+Rx.swift"; sourceTree = "<group>"; };
+		716DD3EC24B5FE9B009DA63C /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		716DD3ED24B5FE9B009DA63C /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		716DD3EE24B5FE9B009DA63C /* ARSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSession.swift; sourceTree = "<group>"; };
+		716DD3FC24B5FEBB009DA63C /* overlay.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = overlay.atlas; sourceTree = "<group>"; };
+		716DD3FF24B5FEEB009DA63C /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		716DD40624B5FF29009DA63C /* DrawerSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerSheetViewController.swift; sourceTree = "<group>"; };
+		716DD40724B5FF29009DA63C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		716DD40824B5FF29009DA63C /* ResultsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
+		716DD40924B5FF29009DA63C /* PlaceSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceSelectionViewController.swift; sourceTree = "<group>"; };
+		716DD40A24B5FF29009DA63C /* PlaceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListViewController.swift; sourceTree = "<group>"; };
+		716DD41824B5FFDD009DA63C /* TargetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetingViewController.swift; sourceTree = "<group>"; };
+		716DD41A24B5FFEA009DA63C /* TargetingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetingScene.swift; sourceTree = "<group>"; };
+		716DD41D24B5FFFC009DA63C /* SearchMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMapVC.swift; sourceTree = "<group>"; };
+		716DD41E24B5FFFC009DA63C /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		716DD41F24B5FFFC009DA63C /* SearchResultTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableVC.swift; sourceTree = "<group>"; };
+		716DD42024B5FFFC009DA63C /* SearchTargetAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTargetAnnotation.swift; sourceTree = "<group>"; };
+		716DD42124B5FFFC009DA63C /* SearchSuggestionsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSuggestionsTableVC.swift; sourceTree = "<group>"; };
+		716DD42924B602B7009DA63C /* TargetARAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetARAnchor.swift; sourceTree = "<group>"; };
+		716DD42B24B602DE009DA63C /* TargetSCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetSCNNode.swift; sourceTree = "<group>"; };
+		716DD42F24B6037F009DA63C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		718A51FC2974A97300359D37 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		71DAAD7D24B60CD90045ADCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71DAAD7F24B60D490045ADCE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71DAAD8224B741A30045ADCE /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		71DAAD9524B7503E0045ADCE /* Target+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Target+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71DAAD9624B7503E0045ADCE /* Target+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Target+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71DAADDA24B931560045ADCE /* TargetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetListViewController.swift; sourceTree = "<group>"; };
+		71DAADDE24B9F3030045ADCE /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		76C92E8D9345888F4E096378 /* Pods_RavenTrace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RavenTrace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BF948D864AC82E68DA8AB9 /* Pods-RavenTrace-RavenTraceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavenTrace-RavenTraceUITests.release.xcconfig"; path = "Target Support Files/Pods-RavenTrace-RavenTraceUITests/Pods-RavenTrace-RavenTraceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E33B7F4A82C9EBE4A8E2AC75 /* Pods-RavenTrace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavenTrace.release.xcconfig"; path = "Target Support Files/Pods-RavenTrace/Pods-RavenTrace.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		716DD3A324B5F2EA009DA63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809BE22505119EE75C7D13CD /* Pods_RavenTrace.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716DD3B924B5F2EB009DA63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716DD3C424B5F2EB009DA63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA786F3C3A3670A209D02D6 /* Pods_RavenTrace_RavenTraceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		716DD39D24B5F2EA009DA63C = {
+			isa = PBXGroup;
+			children = (
+				718A51FC2974A97300359D37 /* Readme.md */,
+				716DD3A824B5F2EA009DA63C /* RavenTrace */,
+				716DD3BF24B5F2EB009DA63C /* RavenTraceTests */,
+				716DD3CA24B5F2EB009DA63C /* RavenTraceUITests */,
+				716DD3A724B5F2EA009DA63C /* Products */,
+				CC5F8507685CC9C57D22E8FC /* Pods */,
+				B3FFA89D628CA2EE23CCFCCA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		716DD3A724B5F2EA009DA63C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				716DD3A624B5F2EA009DA63C /* RavenTrace.app */,
+				716DD3BC24B5F2EB009DA63C /* RavenTraceTests.xctest */,
+				716DD3C724B5F2EB009DA63C /* RavenTraceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		716DD3A824B5F2EA009DA63C /* RavenTrace */ = {
+			isa = PBXGroup;
+			children = (
+				71DAAD8424B7456E0045ADCE /* CoreData */,
+				71DAAD7F24B60D490045ADCE /* AppDelegate.swift */,
+				71DAAD7D24B60CD90045ADCE /* Assets.xcassets */,
+				716DD3FF24B5FEEB009DA63C /* CompassView.swift */,
+				716DD3DF24B5FE9B009DA63C /* Extensions */,
+				716DD3B724B5F2EB009DA63C /* Info.plist */,
+				716DD3D924B5FD81009DA63C /* LaunchScreen.storyboard */,
+				716DD42E24B6037F009DA63C /* Localizable.strings */,
+				716DD3DA24B5FD81009DA63C /* Main.storyboard */,
+				716DD3FC24B5FEBB009DA63C /* overlay.atlas */,
+				716DD42924B602B7009DA63C /* TargetARAnchor.swift */,
+				716DD42B24B602DE009DA63C /* TargetSCNNode.swift */,
+				716DD40524B5FF29009DA63C /* PlaceSelection */,
+				716DD41724B5FFDD009DA63C /* Targeting */,
+				716DD41C24B5FFFC009DA63C /* TargetSearch */,
+			);
+			path = RavenTrace;
+			sourceTree = "<group>";
+		};
+		716DD3BF24B5F2EB009DA63C /* RavenTraceTests */ = {
+			isa = PBXGroup;
+			children = (
+				716DD3C024B5F2EB009DA63C /* RavenTraceTests.swift */,
+				716DD3C224B5F2EB009DA63C /* Info.plist */,
+			);
+			path = RavenTraceTests;
+			sourceTree = "<group>";
+		};
+		716DD3CA24B5F2EB009DA63C /* RavenTraceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				716DD3CB24B5F2EB009DA63C /* RavenTraceUITests.swift */,
+				716DD3CD24B5F2EC009DA63C /* Info.plist */,
+			);
+			path = RavenTraceUITests;
+			sourceTree = "<group>";
+		};
+		716DD3DF24B5FE9B009DA63C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				716DD3E024B5FE9B009DA63C /* CLLocation.swift */,
+				716DD3E124B5FE9B009DA63C /* CLLocationCoordinate2D.swift */,
+				716DD3E224B5FE9B009DA63C /* FloatingPoint.swift */,
+				716DD3E324B5FE9B009DA63C /* CLCircularRegion.swift */,
+				716DD3E424B5FE9B009DA63C /* String.swift */,
+				716DD3E524B5FE9B009DA63C /* MKPlacemark+Extension.swift */,
+				716DD3EA24B5FE9B009DA63C /* Rx */,
+				716DD3EE24B5FE9B009DA63C /* ARSession.swift */,
+				71DAADDE24B9F3030045ADCE /* UITableViewCell+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		716DD3EA24B5FE9B009DA63C /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				716DD3EB24B5FE9B009DA63C /* CLGeocoder+Rx.swift */,
+				716DD3EC24B5FE9B009DA63C /* CLLocationManager+Rx.swift */,
+				716DD3ED24B5FE9B009DA63C /* RxCLLocationManagerDelegateProxy.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		716DD40524B5FF29009DA63C /* PlaceSelection */ = {
+			isa = PBXGroup;
+			children = (
+				716DD40624B5FF29009DA63C /* DrawerSheetViewController.swift */,
+				716DD40724B5FF29009DA63C /* MapViewController.swift */,
+				716DD40A24B5FF29009DA63C /* PlaceListViewController.swift */,
+				716DD40924B5FF29009DA63C /* PlaceSelectionViewController.swift */,
+				716DD40824B5FF29009DA63C /* ResultsTableController.swift */,
+				71DAADDA24B931560045ADCE /* TargetListViewController.swift */,
+			);
+			path = PlaceSelection;
+			sourceTree = "<group>";
+		};
+		716DD41724B5FFDD009DA63C /* Targeting */ = {
+			isa = PBXGroup;
+			children = (
+				716DD41A24B5FFEA009DA63C /* TargetingScene.swift */,
+				716DD41824B5FFDD009DA63C /* TargetingViewController.swift */,
+			);
+			path = Targeting;
+			sourceTree = "<group>";
+		};
+		716DD41C24B5FFFC009DA63C /* TargetSearch */ = {
+			isa = PBXGroup;
+			children = (
+				716DD41D24B5FFFC009DA63C /* SearchMapVC.swift */,
+				716DD41E24B5FFFC009DA63C /* Search.storyboard */,
+				716DD41F24B5FFFC009DA63C /* SearchResultTableVC.swift */,
+				716DD42024B5FFFC009DA63C /* SearchTargetAnnotation.swift */,
+				716DD42124B5FFFC009DA63C /* SearchSuggestionsTableVC.swift */,
+			);
+			path = TargetSearch;
+			sourceTree = "<group>";
+		};
+		71DAAD8424B7456E0045ADCE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				71DAAD8124B741A30045ADCE /* CoreData.xcdatamodeld */,
+				71DAAD9524B7503E0045ADCE /* Target+CoreDataClass.swift */,
+				71DAAD9624B7503E0045ADCE /* Target+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B3FFA89D628CA2EE23CCFCCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76C92E8D9345888F4E096378 /* Pods_RavenTrace.framework */,
+				363BDDD07319B592A6219AEF /* Pods_RavenTrace_RavenTraceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC5F8507685CC9C57D22E8FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19FACF466944D480485E39BB /* Pods-RavenTrace.debug.xcconfig */,
+				E33B7F4A82C9EBE4A8E2AC75 /* Pods-RavenTrace.release.xcconfig */,
+				243F46380E0585ED18A61E69 /* Pods-RavenTrace-RavenTraceUITests.debug.xcconfig */,
+				D2BF948D864AC82E68DA8AB9 /* Pods-RavenTrace-RavenTraceUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		716DD3A524B5F2EA009DA63C /* RavenTrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716DD3D024B5F2EC009DA63C /* Build configuration list for PBXNativeTarget "RavenTrace" */;
+			buildPhases = (
+				D32751FAADCCCBBDBBE8D4D4 /* [CP] Check Pods Manifest.lock */,
+				716DD3A224B5F2EA009DA63C /* Sources */,
+				716DD3A324B5F2EA009DA63C /* Frameworks */,
+				716DD3A424B5F2EA009DA63C /* Resources */,
+				66F36E158AE04E60E46EB8BB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RavenTrace;
+			productName = RavenTrace;
+			productReference = 716DD3A624B5F2EA009DA63C /* RavenTrace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		716DD3BB24B5F2EB009DA63C /* RavenTraceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716DD3D324B5F2EC009DA63C /* Build configuration list for PBXNativeTarget "RavenTraceTests" */;
+			buildPhases = (
+				716DD3B824B5F2EB009DA63C /* Sources */,
+				716DD3B924B5F2EB009DA63C /* Frameworks */,
+				716DD3BA24B5F2EB009DA63C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				716DD3BE24B5F2EB009DA63C /* PBXTargetDependency */,
+			);
+			name = RavenTraceTests;
+			productName = RavenTraceTests;
+			productReference = 716DD3BC24B5F2EB009DA63C /* RavenTraceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		716DD3C624B5F2EB009DA63C /* RavenTraceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716DD3D624B5F2EC009DA63C /* Build configuration list for PBXNativeTarget "RavenTraceUITests" */;
+			buildPhases = (
+				D6415D6ABFFAED232937A3FD /* [CP] Check Pods Manifest.lock */,
+				716DD3C324B5F2EB009DA63C /* Sources */,
+				716DD3C424B5F2EB009DA63C /* Frameworks */,
+				716DD3C524B5F2EB009DA63C /* Resources */,
+				9EA623C3BADD6B47A4B81AF2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				716DD3C924B5F2EB009DA63C /* PBXTargetDependency */,
+			);
+			name = RavenTraceUITests;
+			productName = RavenTraceUITests;
+			productReference = 716DD3C724B5F2EB009DA63C /* RavenTraceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		716DD39E24B5F2EA009DA63C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Raymond Pendergraph";
+				TargetAttributes = {
+					716DD3A524B5F2EA009DA63C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					716DD3BB24B5F2EB009DA63C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 716DD3A524B5F2EA009DA63C;
+					};
+					716DD3C624B5F2EB009DA63C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 716DD3A524B5F2EA009DA63C;
+					};
+				};
+			};
+			buildConfigurationList = 716DD3A124B5F2EA009DA63C /* Build configuration list for PBXProject "RavenTrace" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 716DD39D24B5F2EA009DA63C;
+			productRefGroup = 716DD3A724B5F2EA009DA63C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				716DD3A524B5F2EA009DA63C /* RavenTrace */,
+				716DD3BB24B5F2EB009DA63C /* RavenTraceTests */,
+				716DD3C624B5F2EB009DA63C /* RavenTraceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		716DD3A424B5F2EA009DA63C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718A51FD2974A97300359D37 /* Readme.md in Resources */,
+				716DD3FD24B5FEBC009DA63C /* overlay.atlas in Resources */,
+				716DD3DC24B5FD81009DA63C /* Main.storyboard in Resources */,
+				716DD3DB24B5FD81009DA63C /* LaunchScreen.storyboard in Resources */,
+				716DD43024B6037F009DA63C /* Localizable.strings in Resources */,
+				716DD42324B5FFFC009DA63C /* Search.storyboard in Resources */,
+				71DAAD7E24B60CD90045ADCE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716DD3BA24B5F2EB009DA63C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716DD3C524B5F2EB009DA63C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66F36E158AE04E60E46EB8BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RavenTrace/Pods-RavenTrace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RavenTrace/Pods-RavenTrace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RavenTrace/Pods-RavenTrace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EA623C3BADD6B47A4B81AF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RavenTrace-RavenTraceUITests/Pods-RavenTrace-RavenTraceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RavenTrace-RavenTraceUITests/Pods-RavenTrace-RavenTraceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RavenTrace-RavenTraceUITests/Pods-RavenTrace-RavenTraceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D32751FAADCCCBBDBBE8D4D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RavenTrace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6415D6ABFFAED232937A3FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RavenTrace-RavenTraceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		716DD3A224B5F2EA009DA63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71DAAD9824B7503E0045ADCE /* Target+CoreDataProperties.swift in Sources */,
+				716DD40F24B5FF29009DA63C /* PlaceListViewController.swift in Sources */,
+				716DD42224B5FFFC009DA63C /* SearchMapVC.swift in Sources */,
+				716DD3F324B5FE9B009DA63C /* String.swift in Sources */,
+				716DD40D24B5FF29009DA63C /* ResultsTableController.swift in Sources */,
+				71DAADDB24B931560045ADCE /* TargetListViewController.swift in Sources */,
+				716DD3F124B5FE9B009DA63C /* FloatingPoint.swift in Sources */,
+				716DD42524B5FFFC009DA63C /* SearchTargetAnnotation.swift in Sources */,
+				716DD40B24B5FF29009DA63C /* DrawerSheetViewController.swift in Sources */,
+				716DD3FB24B5FE9B009DA63C /* ARSession.swift in Sources */,
+				716DD42C24B602DE009DA63C /* TargetSCNNode.swift in Sources */,
+				716DD42424B5FFFC009DA63C /* SearchResultTableVC.swift in Sources */,
+				716DD40C24B5FF29009DA63C /* MapViewController.swift in Sources */,
+				716DD3F824B5FE9B009DA63C /* CLGeocoder+Rx.swift in Sources */,
+				71DAAD8324B741A30045ADCE /* CoreData.xcdatamodeld in Sources */,
+				716DD3FA24B5FE9B009DA63C /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				716DD42624B5FFFC009DA63C /* SearchSuggestionsTableVC.swift in Sources */,
+				71DAAD9724B7503E0045ADCE /* Target+CoreDataClass.swift in Sources */,
+				716DD41924B5FFDD009DA63C /* TargetingViewController.swift in Sources */,
+				716DD3F424B5FE9B009DA63C /* MKPlacemark+Extension.swift in Sources */,
+				71DAADDF24B9F3030045ADCE /* UITableViewCell+Extensions.swift in Sources */,
+				71DAAD8024B60D490045ADCE /* AppDelegate.swift in Sources */,
+				716DD40E24B5FF29009DA63C /* PlaceSelectionViewController.swift in Sources */,
+				716DD41B24B5FFEA009DA63C /* TargetingScene.swift in Sources */,
+				716DD3EF24B5FE9B009DA63C /* CLLocation.swift in Sources */,
+				716DD3F924B5FE9B009DA63C /* CLLocationManager+Rx.swift in Sources */,
+				716DD42A24B602B8009DA63C /* TargetARAnchor.swift in Sources */,
+				716DD40124B5FEEB009DA63C /* CompassView.swift in Sources */,
+				716DD3F024B5FE9B009DA63C /* CLLocationCoordinate2D.swift in Sources */,
+				716DD3F224B5FE9B009DA63C /* CLCircularRegion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716DD3B824B5F2EB009DA63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716DD3C124B5F2EB009DA63C /* RavenTraceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716DD3C324B5F2EB009DA63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716DD3CC24B5F2EB009DA63C /* RavenTraceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		716DD3BE24B5F2EB009DA63C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 716DD3A524B5F2EA009DA63C /* RavenTrace */;
+			targetProxy = 716DD3BD24B5F2EB009DA63C /* PBXContainerItemProxy */;
+		};
+		716DD3C924B5F2EB009DA63C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 716DD3A524B5F2EA009DA63C /* RavenTrace */;
+			targetProxy = 716DD3C824B5F2EB009DA63C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		716DD42E24B6037F009DA63C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				716DD42F24B6037F009DA63C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		716DD3CE24B5F2EC009DA63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		716DD3CF24B5F2EC009DA63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		716DD3D124B5F2EC009DA63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FACF466944D480485E39BB /* Pods-RavenTrace.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GXS6Y88NL;
+				INFOPLIST_FILE = RavenTrace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RP.RavenTrace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		716DD3D224B5F2EC009DA63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33B7F4A82C9EBE4A8E2AC75 /* Pods-RavenTrace.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GXS6Y88NL;
+				INFOPLIST_FILE = RavenTrace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RP.RavenTrace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		716DD3D424B5F2EC009DA63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GXS6Y88NL;
+				INFOPLIST_FILE = RavenTraceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RP.RavenTraceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RavenTrace.app/RavenTrace";
+			};
+			name = Debug;
+		};
+		716DD3D524B5F2EC009DA63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GXS6Y88NL;
+				INFOPLIST_FILE = RavenTraceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RP.RavenTraceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RavenTrace.app/RavenTrace";
+			};
+			name = Release;
+		};
+		716DD3D724B5F2EC009DA63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243F46380E0585ED18A61E69 /* Pods-RavenTrace-RavenTraceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GXS6Y88NL;
+				INFOPLIST_FILE = RavenTraceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RP.RavenTraceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RavenTrace;
+			};
+			name = Debug;
+		};
+		716DD3D824B5F2EC009DA63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2BF948D864AC82E68DA8AB9 /* Pods-RavenTrace-RavenTraceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GXS6Y88NL;
+				INFOPLIST_FILE = RavenTraceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RP.RavenTraceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RavenTrace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		716DD3A124B5F2EA009DA63C /* Build configuration list for PBXProject "RavenTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716DD3CE24B5F2EC009DA63C /* Debug */,
+				716DD3CF24B5F2EC009DA63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716DD3D024B5F2EC009DA63C /* Build configuration list for PBXNativeTarget "RavenTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716DD3D124B5F2EC009DA63C /* Debug */,
+				716DD3D224B5F2EC009DA63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716DD3D324B5F2EC009DA63C /* Build configuration list for PBXNativeTarget "RavenTraceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716DD3D424B5F2EC009DA63C /* Debug */,
+				716DD3D524B5F2EC009DA63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716DD3D624B5F2EC009DA63C /* Build configuration list for PBXNativeTarget "RavenTraceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716DD3D724B5F2EC009DA63C /* Debug */,
+				716DD3D824B5F2EC009DA63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		71DAAD8124B741A30045ADCE /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				71DAAD8224B741A30045ADCE /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 71DAAD8224B741A30045ADCE /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 716DD39E24B5F2EA009DA63C /* Project object */;
+}
