@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712AFB952974C6C00009794E /* search_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 712AFB932974C6BF0009794E /* search_view.png */; };
+		712AFB962974C6C00009794E /* world_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 712AFB942974C6BF0009794E /* world_view.png */; };
 		716DD3C124B5F2EB009DA63C /* RavenTraceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3C024B5F2EB009DA63C /* RavenTraceTests.swift */; };
 		716DD3CC24B5F2EB009DA63C /* RavenTraceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716DD3CB24B5F2EB009DA63C /* RavenTraceUITests.swift */; };
 		716DD3DB24B5FD81009DA63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716DD3D924B5FD81009DA63C /* LaunchScreen.storyboard */; };
@@ -71,6 +73,8 @@
 		19FACF466944D480485E39BB /* Pods-RavenTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavenTrace.debug.xcconfig"; path = "Target Support Files/Pods-RavenTrace/Pods-RavenTrace.debug.xcconfig"; sourceTree = "<group>"; };
 		243F46380E0585ED18A61E69 /* Pods-RavenTrace-RavenTraceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavenTrace-RavenTraceUITests.debug.xcconfig"; path = "Target Support Files/Pods-RavenTrace-RavenTraceUITests/Pods-RavenTrace-RavenTraceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		363BDDD07319B592A6219AEF /* Pods_RavenTrace_RavenTraceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RavenTrace_RavenTraceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		712AFB932974C6BF0009794E /* search_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_view.png; sourceTree = "<group>"; };
+		712AFB942974C6BF0009794E /* world_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world_view.png; sourceTree = "<group>"; };
 		716DD3A624B5F2EA009DA63C /* RavenTrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RavenTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716DD3B724B5F2EB009DA63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716DD3BC24B5F2EB009DA63C /* RavenTraceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenTraceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,9 +152,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		712AFB922974C6870009794E /* media */ = {
+			isa = PBXGroup;
+			children = (
+				712AFB942974C6BF0009794E /* world_view.png */,
+				712AFB932974C6BF0009794E /* search_view.png */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
 		716DD39D24B5F2EA009DA63C = {
 			isa = PBXGroup;
 			children = (
+				712AFB922974C6870009794E /* media */,
 				718A51FC2974A97300359D37 /* Readme.md */,
 				716DD3A824B5F2EA009DA63C /* RavenTrace */,
 				716DD3BF24B5F2EB009DA63C /* RavenTraceTests */,
@@ -411,9 +425,11 @@
 			files = (
 				718A51FD2974A97300359D37 /* Readme.md in Resources */,
 				716DD3FD24B5FEBC009DA63C /* overlay.atlas in Resources */,
+				712AFB952974C6C00009794E /* search_view.png in Resources */,
 				716DD3DC24B5FD81009DA63C /* Main.storyboard in Resources */,
 				716DD3DB24B5FD81009DA63C /* LaunchScreen.storyboard in Resources */,
 				716DD43024B6037F009DA63C /* Localizable.strings in Resources */,
+				712AFB962974C6C00009794E /* world_view.png in Resources */,
 				716DD42324B5FFFC009DA63C /* Search.storyboard in Resources */,
 				71DAAD7E24B60CD90045ADCE /* Assets.xcassets in Resources */,
 			);
