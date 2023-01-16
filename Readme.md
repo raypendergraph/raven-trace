@@ -10,3 +10,5 @@ RavenTrace is a prototype app to help hikers, outdoor enthusiasts or anyone use 
 ![Place search](./media/search_view.png)
 
 The dial at the bottof of the world view screen will be a bearing indicator (a compass) but will paint targets around the arc to give the user a wider understanding that is available visually through the AR view (and what's even behind them). The longer lines are cardinal points (N, S, E and W). 
+
+Another note: to track a point you have to tap the target on the map, there will be a little + that will invoke a fly-out with the option to "Track It". Not sure I will keep this UX. 
